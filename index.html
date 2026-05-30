@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SD Negeri Gadog 03</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#0f4c81,#1e88e5);
+    color:white;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.hero{
+    min-height:90vh;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-image:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url('https://drive.google.com/thumbnail?id=1V3Ag_WyYImvwkCgZEaDJu_fXWnGX6aNX&sz=w2000');
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* .hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url('https://drive.google.com/thumbnail?id=1V3Ag_WyYImvwkCgZEaDJu_fXWnGX6aNX&sz=w2000');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ffc107;
+    color:#222;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:70px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    font-size:36px;
+    color:#0f4c81;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:15px;
+}
+
+.stats{
+    background:white;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+    font-size:40px;
+    color:#1e88e5;
+}
+
+.program{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.program-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.contact{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.contact-box{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+}
+
+iframe{
+    width:100%;
+    height:300px;
+    border:none;
+    border-radius:15px;
+}
+
+footer{
+    background:#0f4c81;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.about,
+.contact{
+    grid-template-columns:1fr;
+}
+
+.hero-content h1{
+    font-size:35px;
+}
+
+nav ul{
+    gap:10px;
+    font-size:14px;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">SD N GADOG 03</div>
+
+<nav>
+<ul>
+<li><a href="#profil">Profil</a></li>
+<li><a href="#program">Program</a></li>
+<li><a href="#galeri">Galeri</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>SD NEGERI GADOG 03</h1>
+<p>Mewujudkan Generasi Cerdas, Berkarakter dan Berprestasi</p>
+<a href="#profil" class="btn">Lihat Profil</a>
+</div>
+</section>
+
+<section id="profil">
+
+<div class="section-title">
+<h2>Profil Sekolah</h2>
+</div>
+
+<div class="about">
+
+<img src="https://drive.google.com/thumbnail?id=1qVnMWJVPaZQxv04n-uxTR8VOUhy9RRAg&sz=w2000">
+
+<div>
+<h3>Sambutan Kepala Sekolah</h3>
+<br>
+<p>
+Selamat datang di Website SD Negeri Gadog 03.
+Website ini menjadi sarana informasi dan komunikasi
+antara sekolah, peserta didik, orang tua dan masyarakat.
+</p>
+
+<br>
+
+<h3>Visi</h3>
+<p>
+"Mewujudkan peserta didik yang beriman,
+berkarakter, cerdas dan berprestasi."
+</p>
+
+<br>
+
+<h3>Misi</h3>
+<ul>
+<li>Meningkatkan mutu pembelajaran.</li>
+<li>Mengembangkan karakter siswa.</li>
+<li>Mendorong prestasi akademik dan non akademik.</li>
+<li>Menciptakan lingkungan sekolah yang nyaman.</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="stats">
+
+<div class="card">
+<h3>350+</h3>
+<p>Siswa</p>
+</div>
+
+<div class="card">
+<h3>20</h3>
+<p>Guru</p>
+</div>
+
+<div class="card">
+<h3>12</h3>
+<p>Rombel</p>
+</div>
+
+<div class="card">
+<h3>15+</h3>
+<p>Prestasi</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="program">
+
+<div class="section-title">
+<h2>Program Unggulan</h2>
+</div>
+
+<div class="program">
+
+<div class="program-box">
+<h3>Literasi Sekolah</h3>
+<p>Meningkatkan budaya membaca dan menulis siswa.</p>
+</div>
+
+<div class="program-box">
+<h3>Projek P5</h3>
+<p>Pembelajaran berbasis proyek dan karakter.</p>
+</div>
+
+<div class="program-box">
+<h3>Ekstrakurikuler</h3>
+<p>Pramuka, Futsal, Seni Tari, dan lainnya.</p>
+</div>
+
+<div class="program-box">
+<h3>Digital Learning</h3>
+<p>Pembelajaran berbasis teknologi informasi.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="galeri">
+
+<div class="section-title">
+<h2>Galeri Kegiatan</h2>
+</div>
+
+<div class="gallery">
+
+<img src="https://drive.google.com/uc?export=view&id=1qVnMWJVPaZQxv04n-uxTR8VOUhy9RRAg">
+<img src="https://images.unsplash.com/photo-1513258496099-48168024aec0">
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7">
+
+</div>
+
+</section>
+
+<section id="kontak">
+
+<div class="section-title">
+<h2>Kontak Kami</h2>
+</div>
+
+<div class="contact">
+
+<div class="contact-box">
+<h3>Informasi Sekolah</h3>
+<br>
+<p><b>Alamat:</b> Jl. Gadog No. 03</p>
+<p><b>Email:</b> sdngadog03@gmail.com</p>
+<p><b>Telepon:</b> 0812-3456-7890</p>
+<p><b>Website:</b> www.sdngadog03.sch.id</p>
+</div>
+
+<div>
+<iframe
+ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.9544363488453!2d106.7225750753757!3d-6.652569993342174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69cfdfc0f15edb%3A0x4ae8a4e04629d3ff!2sSDN%20Gadog%2003!5e0!3m2!1sid!2sid!4v1780127202395!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 SD Negeri Gadog 03 | Website Profil Sekolah
+</footer>
+
+<script>
+
+document.querySelectorAll('a[href^="#"]').forEach(link=>{
+    link.addEventListener('click',function(e){
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href'))
+        .scrollIntoView({
+            behavior:'smooth'
+        });
+    });
+});
+
+</script>
+
+</body>
+</html>
